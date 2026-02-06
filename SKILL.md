@@ -1,3 +1,8 @@
+---
+name: arxiv
+description: Search, download, and summarize academic papers from arXiv. Built for AI/ML researchers.
+---
+
 # arXiv Research Assistant
 
 Search, fetch, and analyze academic papers from arXiv.org directly from your AI assistant.
