@@ -1,96 +1,142 @@
-# arXiv Research Assistant
+# 📚 arXiv Research Assistant
 
-> Search, fetch, and analyze academic papers from arXiv.org directly from your AI assistant.
+> **Search, download, and summarize academic papers from arXiv.org — directly from your AI assistant.**
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![OpenClaw](https://img.shields.io/badge/OpenClaw-compatible-purple.svg)
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/ClawHub-skill-purple.svg" alt="ClawHub">
+  <img src="https://img.shields.io/badge/version-1.0.1-orange.svg" alt="Version">
+</p>
 
-## Features
+---
 
-- 🔍 **Search Papers** - Query arXiv with natural language
-- 📄 **Get Details** - Fetch full paper metadata and abstracts
-- 📥 **Download PDFs** - Save papers locally for reading
-- 📚 **Reading List** - Track papers in MongoDB (to-read, reading, read, cited)
-- 🤖 **AI-Ready** - Works with OpenClaw, Claude, and any AI with shell access
+## ✨ What It Does
 
-## Installation
+Your AI gains the power to explore academic research. Ask naturally, get papers instantly.
 
-### For OpenClaw/ClawHub
+| Feature | Description |
+|---------|-------------|
+| 🔍 **Smart Search** | Natural language queries across all arXiv categories |
+| 📄 **Paper Details** | Full abstracts, authors, dates, and metadata |
+| 📥 **PDF Download** | Save papers locally for offline reading |
+| 🏷️ **Categories** | Browse by field (cs.AI, cs.CR, stat.ML, etc.) |
+| 📊 **Recent Papers** | Stay updated with latest research |
+
+---
+
+## 🚀 Quick Start
+
+### Installation
 ```bash
-clawhub install ractorrr/arxiv
+clawhub install Ractorrr/arxiv
 ```
 
-### Manual Installation
-```bash
-git clone https://github.com/Ractorrr/arxiv-skill.git
-cd arxiv-skill
-pip install -r requirements.txt
+### Just Ask Your AI
+```
+"Search arXiv for prompt injection attacks"
+"Find papers by Goodfellow on adversarial examples"
+"Get details for arXiv 2403.04957"
+"Download the latest LLM security papers"
+"What's new in cs.CR this week?"
 ```
 
-## Usage
+---
 
-### Command Line
+## 💻 Command Line Usage
+
 ```bash
-# Search for papers
-python arxiv_tool.py search "LLM security attacks" --max 5
+# Search papers by query
+python arxiv_tool.py search "LLM jailbreaking" --max 10
 
-# Get paper details
+# Get paper details by ID
 python arxiv_tool.py get 2403.04957
 
-# Download PDF
+# Download PDF to local folder
 python arxiv_tool.py download 2403.04957
 
-# Save to reading list (requires MongoDB)
-python arxiv_tool.py save 2403.04957 --status to-read
+# List recent papers in a category
+python arxiv_tool.py recent cs.CR --days 7
 
-# List saved papers
-python arxiv_tool.py list
+# Search by author
+python arxiv_tool.py search --author "Hinton" --max 5
 ```
 
-### With AI Assistant
-Just ask naturally:
-- "Search arXiv for prompt injection papers"
-- "Find recent papers on LLM jailbreaking"
-- "Get details for arXiv 2403.04957"
-- "Add this paper to my reading list"
+---
 
-## Configuration
-
-### Environment Variables
-```bash
-# Optional: MongoDB for paper tracking
-export MONGODB_URI="mongodb+srv://..."
-export MONGODB_DB_NAME="your_database"
-
-# Optional: Custom papers directory
-export ARXIV_PAPERS_DIR="./papers"
-```
-
-## Example Output
+## 📋 Example Output
 
 ```
 🔍 Found 5 papers for: "prompt injection attack LLM"
 
-📄 Automatic and Universal Prompt Injection Attacks against Large Language Models
-   ID: 2403.04957v1
-   Authors: Xiaogeng Liu, Zhiyuan Yu, Yizhe Zhang (+2 more)
-   Published: 2024-03-07
-   Category: cs.AI
-   PDF: https://arxiv.org/pdf/2403.04957v1
+┌─────────────────────────────────────────────────────────────────┐
+│ 📄 Automatic and Universal Prompt Injection Attacks            │
+├─────────────────────────────────────────────────────────────────┤
+│ ID:        2403.04957v1                                         │
+│ Authors:   Xiaogeng Liu, Zhiyuan Yu, Yizhe Zhang (+2)          │
+│ Published: 2024-03-07                                           │
+│ Category:  cs.AI, cs.CR                                         │
+│ PDF:       https://arxiv.org/pdf/2403.04957v1                  │
+└─────────────────────────────────────────────────────────────────┘
+
+│ Abstract: We present a novel approach to automatic prompt 
+│ injection that achieves universal transfer across multiple 
+│ LLM architectures...
 ```
 
-## Use Cases
+---
 
-- **Interview Prep**: Find cutting-edge papers to discuss
-- **Content Creation**: Source material for technical posts
-- **Literature Review**: Systematic paper discovery
-- **Learning**: Deep dive into any technical topic
+## 🎯 Use Cases
 
-## License
+| Who | How They Use It |
+|-----|-----------------|
+| 🎓 **Researchers** | Literature review, finding related work |
+| 💼 **Job Seekers** | Interview prep with cutting-edge papers |
+| ✍️ **Content Creators** | Source material for technical articles |
+| 🧠 **Learners** | Deep dive into any ML/AI topic |
+| 🔒 **Security Pros** | Track latest adversarial ML research |
 
-MIT License - Use freely, attribution appreciated.
+---
 
-## Author
+## ⚙️ Configuration
 
-Created by [Ractor](https://github.com/Ractorrr) 🦅
+### Environment Variables (Optional)
+```bash
+# MongoDB for paper tracking (optional)
+export MONGODB_URI="mongodb+srv://..."
+export MONGODB_DB_NAME="research_papers"
+
+# Custom download directory
+export ARXIV_PAPERS_DIR="./papers"
+```
+
+---
+
+## 📁 Files
+
+| File | Purpose |
+|------|---------|
+| `arxiv_tool.py` | Main CLI tool |
+| `SKILL.md` | AI instructions |
+| `requirements.txt` | Python dependencies |
+
+---
+
+## 🔗 Links
+
+- **GitHub**: [Ractorrr/arxiv-mcp](https://github.com/Ractorrr/arxiv-mcp)
+- **arXiv API**: [arxiv.org/help/api](https://arxiv.org/help/api)
+
+---
+
+## 📄 License
+
+MIT License — Free to use, modify, and distribute.
+
+---
+
+<p align="center">
+  <b>Built by <a href="https://github.com/Ractorrr">Ractor</a></b> 🦅
+  <br>
+  <i>AI Security Researcher</i>
+</p>
