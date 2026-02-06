@@ -1,4 +1,4 @@
-# 📚 arXiv Research Assistant
+# arXiv Research Assistant
 
 > **Search, download, and summarize academic papers from arXiv.org — directly from your AI assistant.**
 
@@ -11,21 +11,21 @@
 
 ---
 
-## ✨ What It Does
+## What It Does
 
 Your AI gains the power to explore academic research. Ask naturally, get papers instantly.
 
 | Feature | Description |
 |---------|-------------|
-| 🔍 **Smart Search** | Natural language queries across all arXiv categories |
-| 📄 **Paper Details** | Full abstracts, authors, dates, and metadata |
-| 📥 **PDF Download** | Save papers locally for offline reading |
-| 🏷️ **Categories** | Browse by field (cs.AI, cs.CR, stat.ML, etc.) |
-| 📊 **Recent Papers** | Stay updated with latest research |
+| **Smart Search** | Natural language queries across all arXiv categories |
+| **Paper Details** | Full abstracts, authors, dates, and metadata |
+| **PDF Download** | Save papers locally for offline reading |
+| **Categories** | Browse by field (cs.AI, cs.CR, stat.ML, etc.) |
+| **Recent Papers** | Stay updated with latest research |
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 ```bash
@@ -43,7 +43,7 @@ clawhub install Ractorrr/arxiv
 
 ---
 
-## 💻 Command Line Usage
+## Command Line Usage
 
 ```bash
 # Search papers by query
@@ -64,13 +64,13 @@ python arxiv_tool.py search --author "Hinton" --max 5
 
 ---
 
-## 📋 Example Output
+## Example Output
 
 ```
-🔍 Found 5 papers for: "prompt injection attack LLM"
+Found 5 papers for: "prompt injection attack LLM"
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ 📄 Automatic and Universal Prompt Injection Attacks            │
+│ Automatic and Universal Prompt Injection Attacks               │
 ├─────────────────────────────────────────────────────────────────┤
 │ ID:        2403.04957v1                                         │
 │ Authors:   Xiaogeng Liu, Zhiyuan Yu, Yizhe Zhang (+2)          │
@@ -79,26 +79,26 @@ python arxiv_tool.py search --author "Hinton" --max 5
 │ PDF:       https://arxiv.org/pdf/2403.04957v1                  │
 └─────────────────────────────────────────────────────────────────┘
 
-│ Abstract: We present a novel approach to automatic prompt 
-│ injection that achieves universal transfer across multiple 
-│ LLM architectures...
+Abstract: We present a novel approach to automatic prompt 
+injection that achieves universal transfer across multiple 
+LLM architectures...
 ```
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 | Who | How They Use It |
 |-----|-----------------|
-| 🎓 **Researchers** | Literature review, finding related work |
-| 💼 **Job Seekers** | Interview prep with cutting-edge papers |
-| ✍️ **Content Creators** | Source material for technical articles |
-| 🧠 **Learners** | Deep dive into any ML/AI topic |
-| 🔒 **Security Pros** | Track latest adversarial ML research |
+| **Researchers** | Literature review, finding related work |
+| **Job Seekers** | Interview prep with cutting-edge papers |
+| **Content Creators** | Source material for technical articles |
+| **Learners** | Deep dive into any ML/AI topic |
+| **Security Pros** | Track latest adversarial ML research |
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables (Optional)
 ```bash
@@ -112,7 +112,7 @@ export ARXIV_PAPERS_DIR="./papers"
 
 ---
 
-## 📁 Files
+## Files
 
 | File | Purpose |
 |------|---------|
@@ -122,21 +122,21 @@ export ARXIV_PAPERS_DIR="./papers"
 
 ---
 
-## 🔗 Links
+## Links
 
 - **GitHub**: [Ractorrr/arxiv-mcp](https://github.com/Ractorrr/arxiv-mcp)
 - **arXiv API**: [arxiv.org/help/api](https://arxiv.org/help/api)
 
 ---
 
-## 📄 License
+## License
 
 MIT License — Free to use, modify, and distribute.
 
 ---
 
 <p align="center">
-  <b>Built by <a href="https://github.com/Ractorrr">Ractor</a></b> 🦅
+  <b>Built by <a href="https://github.com/Ractorrr">Ractor</a></b>
   <br>
   <i>AI Security Researcher</i>
 </p>
